@@ -17,10 +17,11 @@ h3 {
     font-weight: 500;
     letter-spacing: 3px;
 }
-#blue-font {
+h2 {
     color: #006EB6;
     padding-bottom: 20px;
     letter-spacing: 4px;
+    font-size: 15px;
 }
 main {
     text-align: left;
@@ -34,4 +35,14 @@ footer {
 }
 img {
     width: 150px;
+}
+
+/* Dark theme */ 
+
+.dark {
+    background-color: #333;
+    color: white;
+}
+.dark h2 {
+    color: #4F9ACF;
 }
