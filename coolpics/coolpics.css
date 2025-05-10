@@ -12,7 +12,7 @@
 @media screen and (min-width: 700px) {
     .gallery {
         display: grid;
-        grid-template-columns: 1fr 1fr; /* Two equal columns */
+        grid-template-columns: 1fr 1fr; 
         gap: 1rem;
     }
 }
@@ -27,8 +27,8 @@
         display: none;
     }
     header nav {
-        flex-direction: row !important; /* Forcing horizontal layout */
-        justify-content: center; /* Optional: center the nav items */
+        flex-direction: row !important;
+        justify-content: center;
     }
     a {
         margin-left: 4%;
@@ -63,16 +63,13 @@ header, h2 {
 }
 
 main {
-    padding: 5%;
+    padding-left: 2.5%;
+    padding-right: 2.5%;
     padding-top: 15px;
     text-size-adjust: 70%;
     text-align: center;
     font-family: var(--primary-font);
 }
-
-/*section{
-    padding-top: 15px;
-}*/
 
 p {
     font-family: Ariel, Helvetica,sans-serif
