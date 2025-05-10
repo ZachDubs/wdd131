@@ -64,15 +64,15 @@ header, h2 {
 
 main {
     padding: 5%;
-    padding-top: 15%;
+    padding-top: 15px;
     text-size-adjust: 70%;
     text-align: center;
     font-family: var(--primary-font);
 }
 
-section{
-    padding-top: 15%;
-}
+/*section{
+    padding-top: 15px;
+}*/
 
 p {
     font-family: Ariel, Helvetica,sans-serif
