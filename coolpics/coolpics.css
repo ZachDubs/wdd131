@@ -75,6 +75,11 @@ p {
     font-family: Ariel, Helvetica,sans-serif
 }
 
+footer {
+    background-color: var(--primary-color);
+    color: var(--text-light);
+}
+
 img {
     max-width: 100%;
     max-height: 100%;
