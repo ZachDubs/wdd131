@@ -1,0 +1,112 @@
+@import url("https://fonts.googleapis.com/css2?family=Mooli&display=swap");
+:root {
+    --primary-color: #52489c;
+    --secondary-color: #59c3c3;
+    --accent-color: #f45b69;
+    --text-dark: #333;
+    --text-light: #ebebeb;
+    --primary-font: Arial, Helvetica,sans-serif;
+    --secondary-font: Mooli, san-serif;
+}
+
+@media screen and (min-width: 700px) {
+    .gallery {
+        display: grid;
+        grid-template-columns: 1fr 1fr; /* Two equal columns */
+        gap: 1rem;
+    }
+}
+
+@media screen and (min-width: 1000px) {
+    .gallery {
+        display: grid;
+        grid-template-columns: 1fr 1fr 1fr;
+        gap: 1rem;
+    }
+    button {
+        display: none;
+    }
+    header nav {
+        flex-direction: row !important; /* Forcing horizontal layout */
+        justify-content: center; /* Optional: center the nav items */
+    }
+    a {
+        margin-left: 4%;
+        margin-right: 4%;
+    }
+}
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+header{
+    background-color: var(--primary-color);
+    text-align: center;
+    padding-bottom: 20px;
+    padding-top: 10px;
+    color: var(--text-light);
+    font-size: 100%;
+    display: grid;
+    grid-template-columns: 1fr;
+}
+
+body{
+    padding: 0;
+    margin: 0;
+}
+
+header, h2 {
+    font-family: var(--secondary-font);
+}
+
+main {
+    padding: 5%;
+    padding-top: 15%;
+    text-size-adjust: 70%;
+    text-align: center;
+    font-family: var(--primary-font);
+}
+
+section{
+    padding-top: 15%;
+}
+
+p {
+    font-family: Ariel, Helvetica,sans-serif
+}
+
+img {
+    max-width: 100%;
+    max-height: 100%;
+    width: 250px;
+    height: 250px;       
+    aspect-ratio: 1 / 1;       
+    object-fit: cover; 
+    margin-top: 10%;
+}
+
+header nav {
+    display: flex;
+    flex-direction: column;
+    gap: 0.2rem;
+    align-items: center;
+    margin-top: 10px; 
+}
+
+a:link {
+    color: var(--text-light);
+    font-size: .9rem;
+}
+a:visited {
+    color: var(--accent-color);
+}
+button {
+    background-color: var(--primary-color);
+    border: 0px;
+    color: var(--text-light);
+    font-size: 1.2rem;
+    margin-top: 5%;
+}
