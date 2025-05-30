@@ -27,7 +27,7 @@ h1 {
     color: var(--header-color);
 }
 
-h2, a {
+a {
     color: var(--subheader-color);
 }
 
@@ -58,11 +58,26 @@ a {
 main {
     display: grid;
     grid-template-columns: 1fr 2fr 1fr;
+    margin-bottom: 30px;
 
 }
 
-.left, .right {
+.right {
     border: 2px solid var(--text-color);
+    margin-right: 50px;
+}
+
+.left {
+    justify-content: right;
+    justify-items: right;
+    border-right: 2px solid var(--text-color);
+    margin-right: 15px;
+    padding-right: 15px;
+}
+
+.left > h4 {
+    margin-top: 5px;
+    margin-bottom: 5px;
 }
 
 .right {
@@ -76,4 +91,21 @@ main {
     text-align: center;
     padding-top: 25px;
     padding-bottom: 25px;
+}
+
+#date {
+    font-size: 25px;
+    margin-top: 10px;
+    margin-bottom: 5px;
+}
+
+.title {
+    color: var(--text-color);
+    margin-top: 5px;
+    font-size: 30px;
+}
+
+img {
+    display: block;
+    margin:0 auto;
 }
