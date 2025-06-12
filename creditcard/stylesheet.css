@@ -152,6 +152,7 @@ button {
     font-size: 25px;
     cursor: pointer;
 }
+
 button:hover {
     transform: scale(1.05);
 }
