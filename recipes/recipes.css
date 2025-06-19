@@ -186,3 +186,10 @@ footer {
         margin: 0 auto;
     }
 }
+
+@media (max-width: 485px) {
+    body {
+        min-width: 485px;
+
+    }
+}
