@@ -1,0 +1,187 @@
+@import url('https://fonts.googleapis.com/css2?family=Edu+NSW+ACT+Hand+Pre&display=swap');
+ @import url("https://fonts.googleapis.com/css2?family=family=Amatic+SC&display=swap");
+ :root {
+ --primary-color: #1B98E0;
+ --secondary-color: #59c3c3;
+ --text-dark: #333;
+ --text-light: #ebebeb;
+ --primary-font: Arial, Helvetica,sans-serif;
+ --secondary-font: "Edu NSW ACT Hand Pre", cursive;
+ }
+
+* {
+    box-sizing: border-box;
+    font-family: var(--primary-font);
+}
+
+.title, .nameOfRecipe {
+    font-family: var(--secondary-font);
+}
+
+
+
+header {
+    border-bottom: 2px solid lightgray;
+    margin-bottom: 1rem;
+}
+
+img {
+    max-width: 100%
+}
+
+.titleStuff {
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+}
+
+main {
+    padding-left: 2rem;
+    padding-right: 2rem;
+}
+
+.recipeBookImage {
+    max-width: 200px;
+}
+
+.title {
+    align-self: flex-end;
+    font-size: 300%;
+}
+
+.searchBar {
+    align-self: flex-end;
+    padding: 0;
+    margin: 0;
+    height: auto;
+    width: 100%;
+    display: flex;
+}
+
+.searchBar input[type="text"] {
+    flex: 1;
+    border-right: none;
+    border-radius: 6px 0 0 6px;
+    margin: 0;
+}
+.searchBar button {
+    border-left: none;
+    border-radius: 0 6px 6px 0;
+    cursor: pointer;
+}
+
+.searchBar input[type="text"], .searchBar button {
+    border: 1px solid #ccc;
+    padding: 0.5rem;
+    margin-top: 4rem;
+    margin-bottom: 1rem;
+    font-size: 1rem;
+    box-sizing: border-box;
+}
+
+.recipe {
+    border: 2px solid black;
+    border-radius: 12px;
+    padding: 1rem;
+    display: flex;
+    flex-direction: column;
+    margin-bottom: 3rem;
+}
+
+.recipe > img {
+    padding: 1rem 1rem 0;
+}
+
+.recipe-info {
+    display: flex;
+    flex-direction: column;
+    padding-top: 1rem;
+}
+
+.tags, .nameOfRecipe, .rating, .description {
+    align-self: flex-start;
+    margin-left: 2rem;
+}
+
+.tags {
+    border: 1.5px solid black;
+    margin-bottom: 0;
+    margin-top: 0;
+    padding: 0.5rem;
+}
+
+.nameOfRecipe {
+    margin-top: 1rem;
+    color: var(--primary-color);
+    margin-bottom: 0;
+}
+
+.rating {
+    padding-bottom: 2rem;
+}
+
+.icon-star, icon-star-empty {
+    width: 22px;
+    height: 18px;
+}
+
+.description {
+    display: none;
+    font-style: var(--primary-font);
+}
+
+footer {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.social {
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    gap: 0.5rem;
+}
+
+.social > a {
+    width: 50px;
+}
+
+.attributionLink {
+    font-size: 0.6em;
+    color: bluex;
+    text-decoration: none;
+    margin-top: 0.5rem;
+    margin-bottom: 0.5rem;
+}
+
+
+@media (min-width: 815px) {
+    .recipe {
+        flex-direction: row;
+    }
+
+    .recipe > img {
+        max-height: 25rem;
+    }
+
+    .rating {
+        padding-bottom: 0;
+    }
+
+    .description {
+        display: block;
+        margin-right: 2rem;
+    }
+
+    .tags, .rating {
+        margin-bottom: 1rem;
+    }
+}
+
+@media (min-width: 960px) {
+    body {
+        max-width: 960px;
+        margin: 0 auto;
+    }
+}
