@@ -1,0 +1,138 @@
+@import url("https://fonts.googleapis.com/css?family=IM+Fell+French+Canon+SC|Lato");
+@import url('https://fonts.googleapis.com/css2?family=Source+Code+Pro:ital,wght@0,200..900;1,200..900&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Libertinus+Mono&display=swap');
+
+:root {
+  --primary-color: #002855;
+  --secondary-color: #5C677D;
+  --accent1-color: #0466C8;
+  --accent2-color: white;
+
+  /* change the values below to your chosen font(s) */
+  --heading-font: "Source Code Pro";
+  --paragraph-font: "Libertinus Mono";
+
+  /* these colors below should be chosen from among your palette colors above */
+  --headline-color-on-white: var(
+    --primary-color
+  ); /* headlines on a white background */
+  --headline-color-on-color: white; /* headlines on a colored background */
+  --paragraph-color-on-white: var(
+    --primary-color
+  ); /* paragraph text on a white background */
+  --paragraph-color-on-color: white; /* paragraph text on a colored background */
+  --paragraph-background-color: var(--primary-color);
+  --nav-link-color: var(--accent2-color);
+  --nav-background-color: var(--secondary-color);
+  --nav-hover-link-color: white;
+  --nav-hover-background-color: var(--primary-color);
+}
+
+@media (min-width: 767px) {
+  .navbar {
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
+  }
+
+  .nav-links {
+    margin-top: 0;
+    margin-bottom: 1%;
+    padding: 0;
+    gap: 25%;
+  }
+}
+
+body {
+  margin: 0;
+  font-family: var(--paragraph-font);
+  color: var(--primary-color);
+}
+
+.navbar {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  background-color: var(--secondary-color);
+}
+.logo-div, .nav-links {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    text-align: center;
+}
+
+.logo-div {
+    max-width: 25%;
+}
+
+.logo {
+    max-width: 75%;
+}
+
+.nav-links {
+  list-style: none;
+  display: flex;
+  flex-direction: column;
+  padding: 0;
+  width: 100%;
+}
+
+.nav-links a {
+  text-decoration: none;
+  color: white;
+
+  display: block;
+  transition: color 0.3s ease;
+}
+
+.nav-links a:hover {
+  color: var(--accent1-color);
+}
+
+.search-form {
+    margin-bottom: 1rem;
+    display: flex;
+    align-items: center;
+    gap: 0.2rem;
+}
+
+.search-form input[type="search"] {
+  padding: 0.5rem;
+  border-radius: 4px;
+  border: none;
+}
+
+.search-form button {
+  padding: 0.5rem;
+  border: none;
+  border-radius: 4px;
+  cursor: pointer;
+}
+
+main {
+    display: flex;
+}
+
+.tip-of-the-day-div {
+    width: 15%;
+    background-color: var(--primary-color);
+    color: var(--paragraph-color-on-color);
+    padding: .5rem;
+    box-shadow: 2px 0 5px rgba(0, 0, 0, 0.3);
+    overflow-y: auto;
+    text-align: center;
+}
+
+.cybersecurity-tip-title {
+    margin-top: .5rem;
+}
+
+.main-content {
+    flex: 1;
+    display: flex;
+    flex-direction: column;
+    padding: 1rem;
+    gap: 1rem;
+    overflow-y: auto;
+}
