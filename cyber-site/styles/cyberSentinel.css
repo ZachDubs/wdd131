@@ -124,6 +124,7 @@ body {
 
 .cybersecurity-tip-title {
     margin-top: .5rem;
+    margin-bottom: .5rem;
 }
 
 .main-content {
@@ -141,7 +142,7 @@ body {
   margin-bottom: 2rem;
   border-top: 1px solid #ccc;
   padding-bottom: 1rem;
-  justify-self: center;
+  align-items: center;
   width: 100%;
 }
 
@@ -150,6 +151,9 @@ body {
   flex-direction: column;
   align-items: center;
   margin-top: 2.5%;
+  text-align: center;
+  margin-left: 5rem;
+  margin-right: 5rem;
 }
 
 .article-text h3, .article-text img {
@@ -161,9 +165,13 @@ body {
 }
 
 .article img {
-  width: 25%;
+  width: 100%;
   object-fit: cover;
-  border-radius: 8px;
+  max-width: 300px;
+}
+
+#gCImage {
+  max-width: 50%;
 }
 
 #licenses {
@@ -171,9 +179,21 @@ body {
   font-size: 10%;
 }
 
+.welcome-message-text {
+  margin-bottom: 1%;
+}
+
+.Explanation-and-overview-text {
+  margin-bottom: .5rem;
+}
+
+#list-of-topics {
+  margin-left: 1rem;
+}
+
 @media (min-width: 767px) {
   .navbar {
-    flex-direction: row; /* Arrange horizontally */
+    flex-direction: row;
     justify-content: space-between;
     text-align: left;
     align-items: flex-end;
