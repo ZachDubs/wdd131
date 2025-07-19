@@ -177,6 +177,7 @@ body {
 #licenses {
   text-align: center;
   font-size: 10%;
+  padding-bottom: .25rem;
 }
 
 .welcome-message-text {
